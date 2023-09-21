@@ -1,4 +1,4 @@
-import { capitalize, reverse, calculator, caesarCipher } from "./index";
+import { capitalize, reverse, calculator, caesarCipher, analyzeArray } from "./index";
 
 test('capitalize => cat to output Cat', () => {
     expect(capitalize('cat')).toBe('Cat');
@@ -26,4 +26,15 @@ test('divide 72 by 3 to output 24', () => {
 
 test('caeser cipher => shift 5 "attack ? on tiTAn &56!" to output "fyyfhp ? ts ynYFs &56!"', () => {
     expect(caesarCipher('attack ? on tiTAn &56!', 5)).toBe('fyyfhp ? ts ynYFs &56!');
+});
+
+test('analyze array [1,8,3,4,2,6]', () => {
+    expect(analyzeArray([1,8,3,4,2,6])).toEqual(
+        {
+            average: 4,
+            min: 1,
+            max: 8,
+            length: 6
+        }
+    );
 });

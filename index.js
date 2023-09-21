@@ -30,4 +30,13 @@ const caesarCipher = (str, shift) => {
     }).join('');
 }
 
-export { capitalize, reverse, calculator, caesarCipher }
+const analyzeArray = (arr) => {
+    return {
+        average: arr.reduce((a, b) => a + b) / arr.length,
+        min: Math.min(...arr),
+        max: Math.max(...arr),
+        length: arr.length
+    };
+}
+
+export { capitalize, reverse, calculator, caesarCipher, analyzeArray }
