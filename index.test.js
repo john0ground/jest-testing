@@ -24,6 +24,6 @@ test('divide 72 by 3 to output 24', () => {
     expect(calculator.divide(72, 3)).toBe(24);
 });
 
-test('caeser cipher => shift 5 "attack ? on tiTAn &56!" to output "fyyfhp ? ts ynyfs &56!"', () => {
-    expect(caesarCipher('attack ? on tiTAn &56!')).toBe('fyyfhp ? ts ynyfs &56!');
+test('caeser cipher => shift 5 "attack ? on tiTAn &56!" to output "fyyfhp ? ts ynYFs &56!"', () => {
+    expect(caesarCipher('attack ? on tiTAn &56!', 5)).toBe('fyyfhp ? ts ynYFs &56!');
 });
