@@ -11,3 +11,15 @@ test('reverse => congrats to output stargnoc', () => {
 test('add => 6 and 5 to output 11', () => {
     expect(calculator.add(6, 5)).toBe(11);
 });
+
+test('subtract => 90 and 25 to output 65', () => {
+    expect(calculator.subtract(90, 25)).toBe(65);
+});
+
+test('multiply 21 and 7 to output 147', () => {
+    expect(calculator.multiply(21, 7)).toBe(147);
+});
+
+test('divide 72 by 3 to output 24', () => {
+    expect(calculator.divide(72, 3)).toBe(24);
+});
